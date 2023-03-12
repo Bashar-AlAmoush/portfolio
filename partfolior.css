@@ -1,0 +1,122 @@
+ .h:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: 0.3s ease transform;
+
+} 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+  
+.hi:hover{
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10;
+
+} 
+.li {
+    animation: 4s anim-lineUp  both infinite ;
+    animation-direction: alternate; 
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 1;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+h1  {
+
+    font-family: "Montserrat Medium";
+    max-width: 40ch;
+    text-align:end ;
+    transform: scale(0.94);
+    animation: scale 3s both cubic-bezier(0.5, 1, 0.89, 1);
+    animation-delay: 4s;
+  }
+  @keyframes scale {
+    0%{
+        color:black;
+        transform: scale(0.7);
+    }
+    100% {
+        color:black;
+      transform: scale(1.2);
+    }
+  }
+  .div{
+    animation: glitch 1s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  .div:before,
+  .div:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  .div:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  .div:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+  
+  
+  
+ 
+  
