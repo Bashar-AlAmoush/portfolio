@@ -1,3 +1,7 @@
+body{
+  font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+ 
  .h:hover{
     transform: scale(1.15);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -11,14 +15,14 @@ a{
 }
 
   
-.hi:hover{
+/* .hi:hover{
     transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
     z-index: 10;
 
-} 
+}  */
 .li {
-    animation: 4s anim-lineUp  both infinite ;
+    animation: 2s anim-lineUp  both infinite ;
     animation-direction: alternate; 
   }
   @keyframes anim-lineUp {
@@ -38,25 +42,7 @@ a{
       transform: translateY(0%);
     }
   }
-h1  {
 
-    font-family: "Montserrat Medium";
-    max-width: 40ch;
-    text-align:end ;
-    transform: scale(0.94);
-    animation: scale 3s both cubic-bezier(0.5, 1, 0.89, 1);
-    animation-delay: 4s;
-  }
-  @keyframes scale {
-    0%{
-        color:black;
-        transform: scale(0.7);
-    }
-    100% {
-        color:black;
-      transform: scale(1.2);
-    }
-  }
   .div{
     animation: glitch 1s linear infinite;
   }
